@@ -6,29 +6,28 @@ class Preview extends Component {
     const { formData } = this.props;
     return (
       <div className='right-column preview'>
-        <h2>PERSONAL DETAILS</h2>
-        <p><strong>First Name:</strong> {formData.fname}</p>
-        <p><strong>Last Name:</strong> {formData.lname}</p>
-        <p><strong>Address:</strong> {formData.address}</p>
-        <p><strong>Phone:</strong> {formData.phone}</p>
-        <p><strong>Email:</strong> {formData.email}</p>
+        <h1 className='name'>{formData.fname} {formData.lname}</h1>
+        <p>{formData.about}</p>
+        <div className='details'>
+            <p>{formData.address}</p>
+            <p>{formData.phone}</p>
+            <p>{formData.email}</p>
+        </div>
 
         <h2>WORK EXPERIENCE</h2>
         <hr></hr>
-        <p>POSITION</p>
-        <p> company: {formData.company}</p>
-        <p>company-address: {formData.companyAddress}</p>
-        <p>{formData.workedFrom}</p>
-        <p>{formData.workedTo}</p>
+        <p className='position'>{formData.position}</p>
+        <p> {formData.company} — {formData.companyAddress}</p>
+        <p>{formData.workedFrom} — {formData.workedTo}</p>
         <p>{formData.experience}</p>
 
         <h2>EDUCATION</h2>
         <hr></hr>
-        <p> schoolTo: {formData.school}</p>
-        <p>company-degree: {formData.degree}</p>
-        <p>company-address: {formData.schoolAddress}</p>
-        <p>{formData.schoolFrom}</p>
-        <p>{formData.schoolTo}</p>
+
+        <p className='degree'>{formData.degree}</p>
+        <p> {formData.school}</p>
+        <p> {formData.schoolAddress}</p>
+        <p>{formData.schoolFrom} — {formData.schoolTo}</p>
 
       </div>
     );

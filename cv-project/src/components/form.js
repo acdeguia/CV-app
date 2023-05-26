@@ -46,7 +46,7 @@ class Form extends Component {
        
           
           <div className="inputContainer">
-            <label htmlFor="phone">PHONE NUMBER:</label>
+            <label htmlFor="phone">PHONE NUMBER </label>
             <input
               type="tel"
               name="phone"
@@ -60,7 +60,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-            <label htmlFor="address">ADDRESS:</label>
+            <label htmlFor="address">ADDRESS </label>
             <input
               type="text"
               name="address"
@@ -69,14 +69,22 @@ class Form extends Component {
               onChange={handleChange}
             />
           </div>
-
+          <div className="inputContainer about">
+          <label  htmlFor="about">ABOUT</label>
+          <textarea
+            name="about"
+            placeholder="Growth Marketing aficionado who loves to analyza data"
+            value={formData.about}
+            onChange={handleChange}
+          />
+          </div>
           
 
         <h2>WORK EXPERIENCE</h2>
 
         <div className="input-group">
           <div className="inputContainer">
-            <label htmlFor="position">POSITION:</label>
+            <label htmlFor="position">POSITION </label>
             <input
               type="text"
               name="position"
@@ -86,7 +94,7 @@ class Form extends Component {
             />
           </div>
           <div className="inputContainer">
-            <label htmlFor="company">COMPANY:</label>
+            <label htmlFor="company">COMPANY </label>
             <input
               type="text"
               name="company"
@@ -98,7 +106,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="companyAddress">ADDRESS:</label>
+          <label htmlFor="companyAddress">ADDRESS </label>
           <input
             type="text"
             name="companyAddress"
@@ -138,7 +146,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="Experience">DESCRIPTION:</label>
+          <label htmlFor="Experience">DESCRIPTION </label>
           <textarea
             name="experience"
             placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -150,7 +158,7 @@ class Form extends Component {
         <h2>EDUCATION</h2>
 
         <div className="inputContainer">
-          <label htmlFor="school">school:</label>
+          <label htmlFor="school">SCHOOL </label>
           <input
             type="text"
             name="school"
@@ -161,7 +169,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="degree">DEGREE:</label>
+          <label htmlFor="degree">DEGREE </label>
           <input
             type="text"
             name="degree"
@@ -172,7 +180,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="schoolAddress">ADDRESS:</label>
+          <label htmlFor="schoolAddress">ADDRESS </label>
           <input
             type="text"
             name="schoolAddress"
@@ -183,7 +191,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="schoolFrom">FROM:</label>
+          <label htmlFor="schoolFrom">FROM </label>
           <input
             type="number"
             name="schoolFrom"
@@ -197,7 +205,7 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="schoolTo">TO:</label>
+          <label htmlFor="schoolTo">TO </label>
           <input
             type="number"
             name="schoolTo"
