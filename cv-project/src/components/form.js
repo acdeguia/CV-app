@@ -49,8 +49,9 @@ class Form extends Component {
             <label htmlFor="phone">PHONE NUMBER </label>
             <input
               type="tel"
+              pattern="\d{3}[-]\d{4}[-]\d{4}"
               name="phone"
-              placeholder="(+63)-912-2345-644"
+              placeholder="093-9854-9874"
               value={formData.phone}
               onChange={handleChange}
             />
@@ -151,27 +152,30 @@ class Form extends Component {
 
         <h2>EDUCATION</h2>
 
-        <div className="inputContainer">
-          <label htmlFor="school">SCHOOL </label>
-          <input
-            type="text"
-            name="school"
-            placeholder="University of the Philippines"
-            value={formData.school}
-            onChange={handleChange}
-          />
+        <div className="input-group">
+            <div className="inputContainer">
+              <label htmlFor="degree">DEGREE </label>
+              <input
+                type="text"
+                name="degree"
+                placeholder="Bachelor of Science in Computer Science"
+                value={formData.degree}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="inputContainer">
+              <label htmlFor="school">SCHOOL </label>
+              <input
+                type="text"
+                name="school"
+                placeholder="University of the Philippines"
+                value={formData.school}
+                onChange={handleChange}
+              />
+            </div>
         </div>
 
-        <div className="inputContainer">
-          <label htmlFor="degree">DEGREE </label>
-          <input
-            type="text"
-            name="degree"
-            placeholder="Bachelor of Science in Computer Science"
-            value={formData.degree}
-            onChange={handleChange}
-          />
-        </div>
+        
 
         <div className="inputContainer">
           <label htmlFor="schoolAddress">ADDRESS </label>
@@ -184,26 +188,27 @@ class Form extends Component {
           />
         </div>
 
-        <div className="inputContainer">
-          <label htmlFor="schoolFrom">FROM </label>
-          <input
-            type="text"
-            name="schoolFrom"
-            placeholder="January 2015"
-            value={formData.schoolFrom}
-            onChange={handleChange}
-          />
-        </div>
-
-        <div className="inputContainer">
-          <label htmlFor="schoolTo">TO </label>
-          <input
-            type="text"
-            name="schoolTo"
-            placeholder=" July 2023"
-            value={formData.schoolTo}
-            onChange={handleChange}
-          />
+        <div className="input-group">
+            <div className="inputContainer">
+              <label htmlFor="schoolFrom">FROM </label>
+              <input
+                type="text"
+                name="schoolFrom"
+                placeholder="January 2015"
+                value={formData.schoolFrom}
+                onChange={handleChange}
+              />
+            </div>
+            <div className="inputContainer">
+              <label htmlFor="schoolTo">TO </label>
+              <input
+                type="text"
+                name="schoolTo"
+                placeholder=" July 2023"
+                value={formData.schoolTo}
+                onChange={handleChange}
+              />
+            </div>
         </div>
       </div>
     );
