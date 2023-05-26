@@ -1,35 +1,38 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class Preview extends Component {
-    render() {
+  render() {
+    // const { fname, lname, email, phone, address, education, experience } = this.props;
+    const { formData } = this.props;
+    return (
+      <div className='right-column preview'>
+        <h2>PERSONAL DETAILS</h2>
+        <p><strong>First Name:</strong> {formData.fname}</p>
+        <p><strong>Last Name:</strong> {formData.lname}</p>
+        <p><strong>Address:</strong> {formData.address}</p>
+        <p><strong>Phone:</strong> {formData.phone}</p>
+        <p><strong>Email:</strong> {formData.email}</p>
 
+        <h2>WORK EXPERIENCE</h2>
+        <hr></hr>
+        <p>POSITION</p>
+        <p> company: {formData.company}</p>
+        <p>company-address: {formData.companyAddress}</p>
+        <p>{formData.workedFrom}</p>
+        <p>{formData.workedTo}</p>
+        <p>{formData.experience}</p>
 
-        return(
-            <div className="preview">
-                <h2>{this.props.personalDetails.fname} {this.props.personalDetails.lname}</h2>
-                <ul>
-                    <li>Manila, PH</li>
-                    <li>(+63)-912-2345-644</li>
-                    <li>william.johnson@gmail.com </li>
-                </ul>
+        <h2>EDUCATION</h2>
+        <hr></hr>
+        <p> schoolTo: {formData.school}</p>
+        <p>company-degree: {formData.degree}</p>
+        <p>company-address: {formData.schoolAddress}</p>
+        <p>{formData.schoolFrom}</p>
+        <p>{formData.schoolTo}</p>
 
-                <h3>Work Experience</h3>
-                <p>{this.props.experience.position}</p>
-                <p>{this.props.experience.company}</p>
-                <p>{this.props.experience.address}</p>
-                <p>{this.props.experience.description}</p>
-                <p>{this.props.experience.from }</p>
-                <p>{this.props.experience.to}</p>
-
-                <h3>Education</h3>
-                <p>{this.props.education.school}</p>
-                <p>{this.props.education.degree}</p>
-                <p>{this.props.education.address}</p>
-                <p>{this.props.education.from }</p>
-                <p>{this.props.education.to}</p>
-            </div>
-        )
-    }
+      </div>
+    );
+  }
 }
 
-export default Preview
+export default Preview;

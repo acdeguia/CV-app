@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 * {
   margin: 0;
@@ -11,16 +11,55 @@ body {
   background-color: #DFDFDF;
 }
 
-.App {
+
+
+/* .App {
   display: flex;
   justify-content: center;
-}
+} */
 
 .form, .preview {
-  width: 824px;
+  width: 650px;
 margin: 70px;
   background: #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 flex-shrink: 0;
 padding: 50px;
+}
+
+h2 {
+  font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 22px;
+margin-bottom: 10px;
+color: #257FA4;
+
+}
+
+label {
+  font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.095em;
+
+color: #191919;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.inputContainer input {
+  
+height: 24px;
+}
+
+.input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 21px;
+  height: 50px;
 }
