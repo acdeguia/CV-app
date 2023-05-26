@@ -4,7 +4,7 @@ class Form extends Component {
   render() {
     const { handleChange, formData } = this.props;
     return (
-      <div className="left-column form">
+      <div className="form">
         <h2>PERSONAL DETAILS</h2>
         <div className="input-group">
           <div className="inputContainer">

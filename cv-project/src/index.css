@@ -16,14 +16,22 @@ body {
 .App {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+}
+
+.preview, .form {
+  width: 595px;
+  height: 842px;
+  min-width: 600px;
+}
+
+.form {
+  margin-right: 20px;
 }
 
 .form, .preview {
-  width: 650px;
-margin: 70px;
   background: #FFFFFF;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-flex-shrink: 0;
 padding: 50px;
 }
 
@@ -145,4 +153,25 @@ input:not(:focus):not(:placeholder-shown):valid {
 
 input:not(:focus):not(:placeholder-shown):invalid ~ .error-message{
   display: block; 
+}
+
+.print-preview {
+  width: 794px !important;
+  height: 1118px !important;
+}
+
+.pdf-btn {
+  background: #FFFFFF;
+border: 1px solid #257FA4;
+width: 123px;
+height: 38px;
+cursor: pointer;
+margin-top: 30px;
+}
+
+.pdf-btn:hover {
+  background: #257FA4;
+border: 1px solid #257FA4;
+color: #fff;
+
 }
