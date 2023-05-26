@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%7BCV-app-%7D/static/css/main.e2b6d53c.css",
+    "main.js": "/%7BCV-app-%7D/static/js/main.49bd1624.js",
+    "index.html": "/%7BCV-app-%7D/index.html",
+    "main.e2b6d53c.css.map": "/%7BCV-app-%7D/static/css/main.e2b6d53c.css.map",
+    "main.49bd1624.js.map": "/%7BCV-app-%7D/static/js/main.49bd1624.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2b6d53c.css",
+    "static/js/main.49bd1624.js"
+  ]
+}
