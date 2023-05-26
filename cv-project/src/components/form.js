@@ -12,6 +12,7 @@ class Form extends Component {
             <input
               type="text"
               name="fname"
+              placeholder="William"
               value={formData.fname}
               onChange={handleChange}
             />
@@ -21,6 +22,7 @@ class Form extends Component {
             <input
               type="text"
               name="lname"
+              placeholder="Johnson"
               value={formData.lname}
               onChange={handleChange}
             />
@@ -35,6 +37,7 @@ class Form extends Component {
             <input
               type="email"
               name="email"
+              placeholder="william.johnson@gmail.com"
               value={formData.email}
               onChange={handleChange}
             />
@@ -47,6 +50,7 @@ class Form extends Component {
             <input
               type="tel"
               name="phone"
+              placeholder="(+63)-912-2345-644"
               value={formData.phone}
               onChange={handleChange}
             />
@@ -60,6 +64,7 @@ class Form extends Component {
             <input
               type="text"
               name="address"
+              placeholder="Manila, PH"
               value={formData.address}
               onChange={handleChange}
             />
@@ -75,6 +80,7 @@ class Form extends Component {
             <input
               type="text"
               name="position"
+              placeholder="Marketing Manager"
               value={formData.position}
               onChange={handleChange}
             />
@@ -84,6 +90,7 @@ class Form extends Component {
             <input
               type="text"
               name="company"
+              placeholder="Netflix"
               value={formData.company}
               onChange={handleChange}
             />
@@ -95,6 +102,7 @@ class Form extends Component {
           <input
             type="text"
             name="companyAddress"
+            placeholder="San Francisco, USA"
             value={formData.companyAddress}
             onChange={handleChange}
           />
@@ -102,10 +110,11 @@ class Form extends Component {
 
         <div className="input-group">
           <div className="inputContainer">
-            <label htmlFor="workedFrom">workedFrom:</label>
+            <label htmlFor="workedFrom">FROM</label>
             <input
               type="number"
               name="workedFrom"
+              placeholder="2019"
               min="1900"
               max="2099"
               step="1"
@@ -114,9 +123,10 @@ class Form extends Component {
             />
           </div>
           <div className="inputContainer">
-            <label htmlFor="workedTo">workedTo:</label>
+            <label htmlFor="workedTo">TO</label>
             <input
-              type="number"
+              type="text"
+              placeholder="present"
               name="workedTo"
               min="1900"
               max="2099"
@@ -131,6 +141,7 @@ class Form extends Component {
           <label htmlFor="Experience">DESCRIPTION:</label>
           <textarea
             name="experience"
+            placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             value={formData.experience}
             onChange={handleChange}
           />
@@ -143,16 +154,18 @@ class Form extends Component {
           <input
             type="text"
             name="school"
+            placeholder="University of the Philippines"
             value={formData.school}
             onChange={handleChange}
           />
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="degree">degree:</label>
+          <label htmlFor="degree">DEGREE:</label>
           <input
             type="text"
             name="degree"
+            placeholder="Bachelor of Science in Computer Science"
             value={formData.degree}
             onChange={handleChange}
           />
@@ -163,16 +176,18 @@ class Form extends Component {
           <input
             type="text"
             name="schoolAddress"
+            placeholder="Dilaman, Quezon City"
             value={formData.schoolAddress}
             onChange={handleChange}
           />
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="schoolFrom">schoolFrom:</label>
+          <label htmlFor="schoolFrom">FROM:</label>
           <input
             type="number"
             name="schoolFrom"
+            placeholder="2019"
             min="1900"
             max="2099"
             step="1"
@@ -182,10 +197,11 @@ class Form extends Component {
         </div>
 
         <div className="inputContainer">
-          <label htmlFor="schoolTo">schoolTo:</label>
+          <label htmlFor="schoolTo">TO:</label>
           <input
             type="number"
             name="schoolTo"
+            placeholder="2023"
             min="1900"
             max="2099"
             step="1"
