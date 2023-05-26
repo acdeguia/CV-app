@@ -16,18 +16,24 @@ class Preview extends Component {
 
         <h2>WORK EXPERIENCE</h2>
         <hr></hr>
-        <p className='position'>{formData.position}</p>
+        <div className='year'>
+            <p className='position'>{formData.position}</p>
+            <p>{formData.workedFrom} — {formData.workedTo}</p>
+        </div>
         <p> {formData.company} — {formData.companyAddress}</p>
-        <p>{formData.workedFrom} — {formData.workedTo}</p>
+        
         <p>{formData.experience}</p>
 
         <h2>EDUCATION</h2>
         <hr></hr>
 
-        <p className='degree'>{formData.degree}</p>
+        <div className='year'>
+            <p className='degree'>{formData.degree}</p>
+            <p>{formData.schoolFrom} — {formData.schoolTo}</p>
+        </div>
         <p> {formData.school}</p>
         <p> {formData.schoolAddress}</p>
-        <p>{formData.schoolFrom} — {formData.schoolTo}</p>
+        
 
       </div>
     );

@@ -120,12 +120,9 @@ class Form extends Component {
           <div className="inputContainer">
             <label htmlFor="workedFrom">FROM</label>
             <input
-              type="number"
+              type="text"
               name="workedFrom"
-              placeholder="2019"
-              min="1900"
-              max="2099"
-              step="1"
+              placeholder="February 2019"
               value={formData.workedFrom}
               onChange={handleChange}
             />
@@ -136,9 +133,6 @@ class Form extends Component {
               type="text"
               placeholder="present"
               name="workedTo"
-              min="1900"
-              max="2099"
-              step="1"
               value={formData.workedTo}
               onChange={handleChange}
             />
@@ -193,12 +187,9 @@ class Form extends Component {
         <div className="inputContainer">
           <label htmlFor="schoolFrom">FROM </label>
           <input
-            type="number"
+            type="text"
             name="schoolFrom"
-            placeholder="2019"
-            min="1900"
-            max="2099"
-            step="1"
+            placeholder="January 2015"
             value={formData.schoolFrom}
             onChange={handleChange}
           />
@@ -207,12 +198,9 @@ class Form extends Component {
         <div className="inputContainer">
           <label htmlFor="schoolTo">TO </label>
           <input
-            type="number"
+            type="text"
             name="schoolTo"
-            placeholder="2023"
-            min="1900"
-            max="2099"
-            step="1"
+            placeholder=" July 2023"
             value={formData.schoolTo}
             onChange={handleChange}
           />

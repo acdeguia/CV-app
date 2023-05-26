@@ -16,14 +16,14 @@ class App extends Component {
       position: 'Marketing Manager',
       company: 'Netflix',
       companyAddress: 'San Francisco, USA',
-      workedFrom: 2019,
+      workedFrom: 'Jaunary 2015',
       workedTo: 'present',
       workDescription: '',
       school: 'University of the Philippines',
       degree: 'Bachelor of Science in Computer Science',
       schoolAddress: 'Dilaman, Quezon CIty',
-      schoolFrom: '2019',
-      schoolTo: '2023',
+      schoolFrom: 'June 2019',
+      schoolTo: 'July 2023',
     };
   }
 

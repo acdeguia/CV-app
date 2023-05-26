@@ -13,10 +13,10 @@ body {
 
 
 
-/* .App {
+.App {
   display: flex;
   justify-content: center;
-} */
+}
 
 .form, .preview {
   width: 650px;
@@ -25,10 +25,6 @@ margin: 70px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 flex-shrink: 0;
 padding: 50px;
-}
-
-.preview {
-  height: 1165px;
 }
 
 h2 {
@@ -49,6 +45,25 @@ letter-spacing: 0.095em;
 
 color: #191919;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+
+input:focus, textarea:focus {
+  outline: 0;
+  border: 2px solid #257FA4;
+}
+
+input:hover, textarea:hover {
+  border: 2px solid #257FA4;
+}
+
 
 .inputContainer {
   display: flex;
@@ -98,9 +113,24 @@ text-transform: uppercase;
 .preview p {
   font-weight: 400;
 font-size: 12px;
+line-height: 20px;
+}
+
+.preview h2 {
+  margin-top: 20px;
 }
 
 .position, .degree {
   font-weight: 500 !important;
 font-size: 15px !important;
 }
+
+.year {
+  display: flex;
+  justify-content: space-between;
+}
+
+.year p + p {
+  font-style: italic;
+}
+
