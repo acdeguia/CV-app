@@ -158,6 +158,8 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .error-message{
 .print-preview {
   width: 794px !important;
   height: 1118px !important;
+  box-shadow: none !important;
+
 }
 
 .pdf-btn {
